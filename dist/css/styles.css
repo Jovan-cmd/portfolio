@@ -377,6 +377,14 @@ header .container nav ul li a {
   text-align: center;
 }
 
+.section .contact .social .info {
+  color: #fff;
+}
+
+.section .contact .social .info p {
+  padding: 10px 0px;
+}
+
 .section .contact .social ul {
   color: #fff;
   list-style-type: none;
@@ -437,5 +445,181 @@ footer .styles {
   padding: 10px 0px;
   font-size: 20px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1025px) {
+  .skills .skill p {
+    font-size: 14px;
+  }
+  .services .service p {
+    font-size: 16px;
+  }
+  .aboutMe .text p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header nav ul li a {
+    font-size: 14px;
+  }
+  .cover .naslov {
+    width: 80%;
+  }
+  .cover .naslov h2 {
+    font-size: 35px;
+  }
+  .cover .naslov p {
+    font-size: 20px;
+  }
+  .skills .skill {
+    width: 48% !important;
+  }
+  .services .service {
+    width: 48%;
+  }
+  .services .service p {
+    font-size: 16px;
+  }
+  .projects .project p {
+    font-size: 14px !important;
+  }
+  .aboutMe .text p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px;
+  }
+  .contact .contactform {
+    width: 100% !important;
+  }
+  .contact .contactform input[type=text], .contact .contactform input[type=email] {
+    width: 100%;
+    padding: 10px 16px !important;
+    margin: 8px 0;
+  }
+  .contact .contactform label {
+    font-size: 14px !important;
+  }
+  .contact .social {
+    width: 100% !important;
+  }
+  .contact .social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact .social ul li {
+    padding: 0px;
+  }
+  .contact .social ul li a i {
+    font-size: 30px !important;
+    padding: 20px 0px;
+  }
+  .contact .social ul li a i:hover {
+    color: #ad453a;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  footer .styles {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  header .container .logo, header .container nav {
+    width: 100%;
+  }
+  header .container .logo {
+    text-align: center;
+    font-size: 14px;
+  }
+  header .container nav ul li {
+    padding: 5px 5px;
+  }
+  header .container nav ul li a {
+    font-size: 10px !important;
+  }
+  .section .sectionNaslov {
+    font-size: 18px;
+  }
+  .section .skills {
+    padding-bottom: 0px;
+  }
+  .section .skills .skill {
+    width: 100% !important;
+    margin: 20px 0px !important;
+  }
+  .section .skills .skill p {
+    font-size: 12px;
+  }
+  .section .services .service {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .section .services .service h2 {
+    font-size: 16px;
+  }
+  .section .services .service p {
+    font-size: 12px;
+  }
+  .section .projects .project a img {
+    width: 100%;
+  }
+  .section .projects .project p {
+    font-size: 12px !important;
+  }
+  .section .aboutMe .picture {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .section .aboutMe .picture img {
+    width: 48%;
+  }
+  .section .aboutMe .text {
+    width: 100%;
+  }
+  .section .aboutMe .text p {
+    padding: 10px 20px;
+  }
+  .section .social .info {
+    font-size: 12px;
+  }
+  footer .styles {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cover .naslov {
+    width: 100%;
+  }
+  .cover .naslov h2 {
+    font-size: 20px;
+  }
+  .cover .naslov p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  header .container .logo, header .container nav {
+    width: 100%;
+  }
+  header .container .logo {
+    text-align: center;
+    font-size: 14px;
+  }
+  header .container nav ul li {
+    padding: 5px 5px;
+  }
+  header .container nav ul li a {
+    font-size: 8px !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

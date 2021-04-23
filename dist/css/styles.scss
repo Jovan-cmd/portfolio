@@ -307,7 +307,15 @@ header{
         .social{
             width: 48%;
             text-align: center;
-    
+
+            .info{
+                color:#fff;
+
+                p{
+                    padding:10px 0px;
+                }
+            }
+
             ul{ 
                 color: #fff;
                 list-style-type: none;
@@ -376,9 +384,336 @@ footer{
 //responsive
 
 @media screen and (max-width:1025px){
+   .skills{
 
+       .skill{
+
+           p{
+               font-size: 14px;
+           }
+       }
+   } 
+
+   .services{
+
+    .service{
+
+        p{
+            font-size: 16px;
+        }
+    }
+   }
+
+   .aboutMe{
+
+        .text{
+
+            p{
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+   }
 }
 
 
+@media screen and (max-width:770px){
+
+    header{
+
+        nav{
+            
+            ul{
+
+                li{
+
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cover{
+
+        .naslov{
+            width: 80%;
+
+            h2{
+                font-size: 35px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
 
 
+    .skills{
+
+        .skill{
+            width: 48% !important;
+        }
+    }
+
+    .services{
+
+        .service{
+            width: 48%;
+
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .projects{
+
+
+        .project{
+            p{
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .aboutMe{
+
+        .text{
+
+            p{
+                font-size: 12px;
+                line-height: 20px;
+                padding:0px;
+            }
+        }
+   }
+
+   .contact{
+
+    .contactform{
+        width: 100% !important;
+
+        input[type=text], input[type=email]{
+            width: 100%;
+            padding: 10px 16px !important; 
+            margin: 8px 0;
+            
+          }
+
+        label{
+            font-size: 14px !important;
+        }
+    }
+
+        .social{
+            width: 100% !important;
+
+            ul{ 
+                @include fleks;
+                @include space-a;
+                
+
+                li{
+                    padding: 0px;
+                
+                    a{
+                        
+
+                        i{
+                            font-size: 30px !important;
+                            padding:20px 0px;
+                            &:hover{
+                                color:#ad453a;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+            
+        }
+
+   }
+
+   footer{
+       
+    .styles{
+        font-size: 14px;
+    }
+   }
+}
+
+@media screen and (max-width:430px){
+
+    header{
+
+        .container{
+
+            .logo,nav{
+                width: 100%;
+            }
+
+            .logo{
+                text-align: center;
+                font-size: 14px;
+            }
+
+            nav{
+
+                ul{
+
+                    li{
+                        padding:5px 5px;
+
+                        a{
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section{
+
+        .sectionNaslov{
+            font-size: 18px;
+        }
+
+        .skills{
+            padding-bottom: 0px;
+
+            .skill{
+                width: 100% !important;
+                margin:20px 0px !important;
+
+                p{
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        .services{
+
+            .service{
+                width: 100%;
+                padding: 20px 10px;
+
+                h2{
+                    font-size: 16px;
+                }
+
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .projects{
+
+            .project{
+
+                a{
+
+                    img{
+                        width: 100%;
+                    }
+                }
+    
+
+               p{
+                    font-size: 12px !important;
+               }
+            }
+        }
+
+        .aboutMe{
+
+            .picture{
+                width: 100%;
+                text-align:center;
+                padding: 0px;
+                img{
+                    width: 48%;
+                }
+            }
+
+            .text{
+                width: 100%;
+
+                p{
+                    padding:10px 20px;
+                }
+            }
+        }
+
+        .social{
+            
+            .info{
+                font-size: 12px;
+            }
+        }
+    }
+
+    footer{
+
+        .styles{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width:380px){
+
+    .cover{
+
+        .naslov{    
+            width: 100%;
+
+            h2{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:325px){
+
+    header{
+
+        .container{
+
+            .logo,nav{
+                width: 100%;
+            }
+
+            .logo{
+                text-align: center;
+                font-size: 14px;
+            }
+
+            nav{
+
+                ul{
+
+                    li{
+                        padding:5px 5px;
+
+                        a{
+                            font-size: 8px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
