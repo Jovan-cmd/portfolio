@@ -1,0 +1,441 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.eighty {
+  background: #ad453a;
+  width: 80%;
+}
+
+.fifty {
+  background: #ad453a;
+  width: 50%;
+}
+
+.sixty {
+  background: #ad453a;
+  width: 60%;
+}
+
+.seventy {
+  background: #ad453a;
+  width: 70%;
+}
+
+.sixty-five {
+  background: #ad453a;
+  width: 65%;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url(../../fonts/TitilliumWeb-Regular.ttf);
+}
+
+body {
+  font-family: "myFont";
+  background-color: #202020;
+}
+
+a {
+  text-decoration: none;
+  color: #020202;
+}
+
+.dflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+header .container {
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .logo {
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+header .container .logo :hover {
+  color: #ad453a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+header .container nav ul li {
+  padding: 20px;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header .container nav ul li :hover {
+  color: #ad453a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cover {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url("../../images/NotebookDesign.jpg");
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover .naslov h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.cover .naslov p {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: #ff4c3c;
+}
+
+.section {
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.section .sectionNaslov {
+  padding: 30px 0px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.section .skills {
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 20px;
+}
+
+.section .skills .skill {
+  width: 30%;
+  margin: 70px 0px;
+  background-color: #fff;
+}
+
+.section .skills .skill .name, .section .skills .skill .percentage {
+  width: 50%;
+  padding: 5px 0px;
+  color: white;
+}
+
+.section .skills .skill .name {
+  padding-left: 5px;
+}
+
+.section .skills .skill .percentage {
+  padding-right: 5px;
+  text-align: right;
+}
+
+.section .services {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #020202;
+  padding-bottom: 30px;
+}
+
+.section .service {
+  width: 30%;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.section .service i {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.section .service h2 {
+  margin-bottom: 10px;
+}
+
+.section .service p {
+  font-size: 22px;
+}
+
+.section .projects {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .projects .project {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+.section .projects .project img {
+  width: 50%;
+  height: 50%;
+  opacity: 0.4;
+  margin: 10px 0px;
+}
+
+.section .projects .project p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.section .aboutMe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.section .picture {
+  width: 40%;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.section .picture img {
+  width: 100%;
+}
+
+.section .text {
+  width: 40%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.section .text p {
+  padding: 10px 0px;
+  line-height: 35px;
+}
+
+.section .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section .contact .contactform {
+  width: 48%;
+  color: #fff;
+}
+
+.section .contact .contactform input[type=text], .section .contact .contactform input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section .contact .contactform input[type=submit] {
+  width: 100%;
+  background-color: #ad453a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.section .contact .contactform textarea {
+  width: 100%;
+  outline: none;
+  background-color: white;
+  padding: 15px 10px;
+  resize: none;
+}
+
+.section .contact .contactform label {
+  font-size: 23px;
+}
+
+.section .contact .social {
+  width: 48%;
+  text-align: center;
+}
+
+.section .contact .social ul {
+  color: #fff;
+  list-style-type: none;
+}
+
+.section .contact .social ul li {
+  font-size: 20px;
+  padding: 11px 0px;
+}
+
+.section .contact .social ul li a {
+  color: #fff;
+}
+
+.section .contact .social ul li a i {
+  font-size: 40px;
+  padding: 20px 0px;
+}
+
+.section .contact .social ul li a i:hover {
+  color: #ad453a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.width100 {
+  width: 100%;
+  background-color: #ad453a;
+}
+
+.crnaslova {
+  color: black !important;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+footer p {
+  color: #000;
+}
+
+footer p a {
+  color: #ad453a;
+}
+
+footer .styles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

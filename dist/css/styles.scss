@@ -1,0 +1,384 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+$percentages: (
+            eighty: 80%, 
+            fifty: 50%, 
+            sixty: 60%,
+            seventy: 70%,
+            sixty-five: 65%);
+@each $lenght, $percentage in $percentages {
+    .#{$lenght} {
+        background: #ad453a;
+        width: $percentage;
+    }
+}
+@mixin fleks{
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin centriranje{
+    width: 80%;
+    margin: 0px auto;
+}
+@mixin space-a{
+    justify-content: space-around;
+}
+@mixin space-b{
+    justify-content: space-between;
+}
+@mixin centar{
+    justify-content: center;
+}
+@font-face {
+    font-family: "myFont" ;
+    src: url(../../fonts/TitilliumWeb-Regular.ttf);
+}
+body{
+    font-family: "myFont";
+    background-color: #202020;
+}
+
+
+a{
+    text-decoration: none;
+    color:#020202;    
+}
+
+.dflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.between{
+    justify-content: space-between;
+}
+.around{
+    justify-content: space-around;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color:white;
+    
+    .container{
+        @include centriranje;
+        @include fleks;
+        justify-content: space-between;
+
+        .logo{
+            padding-top: 5px;
+            font-size: 18px;
+            :hover{
+                color:#ad453a;
+                transition: 0.3s;
+            }
+        }
+
+        nav{
+            ul{
+                @include fleks;
+                justify-content: center;
+                text-transform: uppercase;
+
+                 li{
+                    padding:20px;
+                    list-style-type: none;
+                    font-size: 18px; 
+                    font-weight: bold;
+                    :hover{
+                        color: #ad453a;
+                        transition: 0.3s;
+                    }
+                     a{
+                        text-decoration: none;
+                        color:#000;
+                 }
+            }
+        }
+    }
+}}
+
+.cover{
+    height: 100vh;
+    width: 100%;
+    @include fleks;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../../images/NotebookDesign.jpg");
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .naslov{
+        h2{
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 30px;
+            font-style:italic;
+            font-weight: bold;
+            color: #ff4c3c;
+        }
+    }
+}
+
+.section{
+    @include centriranje;
+    @include fleks;    
+    justify-content: space-around; 
+    padding-bottom: 30px;
+
+    .sectionNaslov{
+        padding:30px 0px; 
+        width: 100%;
+        text-align: center;
+        color:white;
+        font-size: 40px;
+        
+    }
+
+    .skills{
+        width: 100%;
+        margin: 0px auto;
+        padding-bottom: 20px;
+        
+        .skill{
+            width: 30%;
+            margin: 70px 0px;
+            background-color: #fff;
+            .name, .percentage{
+                width: 50%;
+                padding: 5px 0px;
+                color:white;
+            }
+            .name{
+                padding-left: 5px;
+            }
+            .percentage{
+                padding-right: 5px;
+                text-align: right;
+            }
+
+        }
+    }
+
+    .services{
+        width: 100%;
+        @include fleks;
+        justify-content: space-around;
+        color: #020202;
+        padding-bottom: 30px;
+    }
+
+    .service{
+        width: 30%;
+        text-align: center;
+        padding:40px 0px;
+
+        i{
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+        
+        h2{
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 22px;
+        }
+    }
+
+
+    .projects{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .project{
+            width: 80%;
+            @include fleks;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:#fff;
+            text-align:center;
+    
+            img{
+                width:50%;
+                height: 50%;
+                opacity: 0.4;
+                margin:10px 0px;
+                
+            }
+    
+            p{
+                color:#fff;
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .aboutMe{
+        width: 100%;
+        @include fleks;
+        @include space-a;
+        @include centar;
+        text-align: center;
+
+    }
+
+    .picture{
+        width: 40%;
+        text-align: center;
+        padding-right: 30px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .text{
+        width: 40%;
+        font-size:20px;
+        text-align: justify;
+
+        p{
+            padding:10px 0px;
+            line-height: 35px;
+        }
+    }
+
+
+    .contact{  
+        @include fleks;
+        @include space-b;
+
+        .contactform{
+
+            width: 48%;
+            color: #fff;
+    
+            input[type=text], input[type=email]{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 100%;
+                background-color:#ad453a;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+
+              
+              textarea {
+                width: 100%;
+                outline: none;
+                background-color:white ;
+                padding: 15px 10px;
+                resize: none;
+              }
+            
+            label{
+                font-size: 23px;
+            }
+
+        }
+    
+        .social{
+            width: 48%;
+            text-align: center;
+    
+            ul{ 
+                color: #fff;
+                list-style-type: none;
+
+
+                li{
+                    font-size: 20px;
+                    padding: 11px 0px;
+
+    
+                    a{
+                        color: #fff;
+
+                        i{
+                            font-size: 40px;
+                            padding:20px 0px;
+                            &:hover{
+                                color:#ad453a;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+    
+                }
+    
+            }
+            
+        }
+    }
+
+}
+
+
+.width100{
+    width:100%;
+    background-color: #ad453a;
+}
+
+.crnaslova{
+    color: black !important;
+}
+
+footer{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+
+    p{
+        color:#000;
+
+        a{
+            color: #ad453a;
+        }
+    }
+
+    .styles{
+        width: 100%;
+        @include fleks;
+        @include space-a;
+        padding:10px 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+//responsive
+
+@media screen and (max-width:1025px){
+
+}
+
+
+
+
